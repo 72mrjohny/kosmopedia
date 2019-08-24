@@ -1,0 +1,41 @@
+*{
+    font-family: 'Exo 2', sans-serif;
+}
+
+
+.spaceObjects button {
+text-transform: uppercase;
+font-weight: bold;
+padding: 10px;
+width: 30%;
+min-width: 120px;
+cursor: pointer;
+font-size: 18px;
+background-color: rgb(7, 212, 68);
+border: 2px solid black;
+transition: 0.2s;
+
+}
+.spaceObjects button:hover{
+    color: yellow;
+    border-color: rgb(255, 161, 21);
+    
+}
+.spaceObjects ul {
+    list-style: none;
+    padding-left: 30px;
+}
+.spaceObjects li{
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.spaceObjects a{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.spaceObjects a:hover{
+    color: #111;
+}

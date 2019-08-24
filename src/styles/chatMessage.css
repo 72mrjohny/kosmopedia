@@ -1,0 +1,60 @@
+
+
+
+.chatMessage *{
+    font-family: 'Exo 2', sans-serif;
+
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.chatMessage p {
+    background-color: rgb(223, 253, 115);
+    position: relative;
+    width: 100%;
+    min-height: 70px;
+    border: 2px solid black;
+}
+.chatMessage span {
+    
+    font-size: 12px;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+.chatMessage #score {
+    text-align: center;
+    width: 20px;
+    line-height: 28px;
+    background-color: #fff;
+    font-size: 14px;
+    position: absolute;
+    top: 10px;
+    right: 100px;
+}
+.far {
+    position: absolute;
+    top: 5px;
+    right: 100px;
+    color: white;
+    width: 10px;
+    height: 10px;
+}
+
+
+.chatMessage button {
+
+    position: absolute;
+    height: 30px;
+    width: 30px
+}
+
+#plus{
+    top: 10px;
+    right: 10px;
+}
+#minus{
+    top: 10px;
+    right: 40px;
+}
