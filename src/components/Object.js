@@ -3,9 +3,11 @@ import '../styles/cosmos.css';
 
 
 const Object = (props) => {
-
+    console.log(props);
     return (
-        <div>{props.name}</div>
+        <div className="product">
+            <h1>{props.id}</h1>
+        </div>
     )
 }
 

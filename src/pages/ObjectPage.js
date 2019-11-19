@@ -3,14 +3,12 @@ import { Link } from 'react-router-dom';
 import Object from '../components/Object';
 import '../styles/cosmos.css';
 
-const ObjectPage = (props) => {
-    console.log(props);
+const ObjectPage = ({ match }) => {
     return (
         <>
             <div>Strona Obiektu
-                 {/* {props.object.name} */}
             </div>
-            <Object />
+            <Object id={match.params.id} />
             <Link to="/cosmos">Powrót do spisu obiektów</Link>
         </>
     )

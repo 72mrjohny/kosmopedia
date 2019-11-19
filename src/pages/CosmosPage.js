@@ -54,6 +54,7 @@ class CosmosPage extends React.Component {
 
 
     state = {
+        objects: data.objects,
         select: "all",
     }
     handleFilterList(option) {
@@ -62,12 +63,11 @@ class CosmosPage extends React.Component {
         })
     }
     objectsList = () => {
-        var that = this;
         let objects = data.objects;
 
         switch (this.state.select) {
             case "all":
-                return objects.map(object => <li><Link object={that.object} to={`/cosmobject/${object.name}`}>{object.name}</Link></li>)
+                return objects.map(object => <li key={object.id}><Link object={this.object} to={`/cosmobject/${object.name}`}>{object.name}</Link></li>)
             case "galaxy":
                 objects = objects.filter(object => object.type === "galaxy")
                 return objects.map(object => <li><Link to={`/cosmobject/${object.name}`}>{object.name}</Link></li>)
@@ -87,7 +87,7 @@ class CosmosPage extends React.Component {
             <div className="spaceObjects">
                 <button onClick={this.handleFilterList.bind(this, "galaxy")}>Galaktyki</button>
                 <button onClick={this.handleFilterList.bind(this, "planet")}>Planety</button>
-                <button onClick={this.handleFilterList.bind(this, "black hole")}>Osobliwości</button>
+                <button onClick={this.handleFilterList.bind(this, "black hole")}>Czarne dziury</button>
                 <ul>
                     {this.objectsList()}
                 </ul>
